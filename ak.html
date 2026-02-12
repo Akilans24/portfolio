@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #222;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: purple;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: purple;
+            color: white;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .projects {
+            background: #f4f4f4;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Contact */
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background:purple;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #007f85;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>MyPortfolio</h2>
+        <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#achievements">achievements</a></li>
+            >
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Hello, I'm akilan</h1>
+            <p>Web Developer</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with experience in creating
+            responsive and user-friendly websites using modern web technologies.iam a great artist in creating arts you know.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="achievements" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-achievemnets">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Simple website built with HTML & CSS.</p>
+            </div>
+        </div>
+    </section
+</body>
+</html>
